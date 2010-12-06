@@ -10,13 +10,15 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20101206044011) do
+ActiveRecord::Schema.define(:version => 20101206052122) do
 
   create_table "countries", :force => true do |t|
     t.string   "name"
     t.string   "country_code"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.float    "latitude"
+    t.float    "longitude"
   end
 
   create_table "loan_sectors", :force => true do |t|
@@ -35,6 +37,17 @@ ActiveRecord::Schema.define(:version => 20101206044011) do
     t.integer  "loan_sector_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "kiva_image_id"
+    t.integer  "kiva_image_template"
+    t.integer  "loan_amount"
+    t.string   "activity"
+    t.datetime "posted_date"
+    t.integer  "borrower_count"
+    t.string   "name"
+    t.string   "use"
+    t.float    "latitude"
+    t.float    "longitude"
+    t.string   "geo_level"
   end
 
 end
