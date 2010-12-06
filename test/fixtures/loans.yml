@@ -1,0 +1,19 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  kiva_id: 1
+  title: MyString
+  city: MyString
+  country_id: 1
+  gender: MyString
+  kiva_status: MyString
+  loan_sector_id: 1
+
+two:
+  kiva_id: 1
+  title: MyString
+  city: MyString
+  country_id: 1
+  gender: MyString
+  kiva_status: MyString
+  loan_sector_id: 1

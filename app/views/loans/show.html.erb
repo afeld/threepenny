@@ -1,0 +1,40 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Kiva:</b>
+  <%= @loan.kiva_id %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @loan.title %>
+</p>
+
+<p>
+  <b>City:</b>
+  <%= @loan.city %>
+</p>
+
+<p>
+  <b>Country:</b>
+  <%= @loan.country_id %>
+</p>
+
+<p>
+  <b>Gender:</b>
+  <%= @loan.gender %>
+</p>
+
+<p>
+  <b>Kiva status:</b>
+  <%= @loan.kiva_status %>
+</p>
+
+<p>
+  <b>Loan sector:</b>
+  <%= @loan.loan_sector_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_loan_path(@loan) %> |
+<%= link_to 'Back', loans_path %>

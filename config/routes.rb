@@ -1,4 +1,6 @@
 Threepenny::Application.routes.draw do
+  resources :loans
+
   resources :loan_sectors
 
   resources :countries
