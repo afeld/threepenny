@@ -1,0 +1,21 @@
+<%= form_for(@loan_sector) do |f| %>
+  <% if @loan_sector.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@loan_sector.errors.count, "error") %> prohibited this loan_sector from being saved:</h2>
+
+      <ul>
+      <% @loan_sector.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

@@ -1,4 +1,6 @@
 Threepenny::Application.routes.draw do
+  resources :loan_sectors
+
   resources :countries
 
   # The priority is based upon order of creation:

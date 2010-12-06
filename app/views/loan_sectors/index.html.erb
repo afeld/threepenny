@@ -1,0 +1,23 @@
+<h1>Listing loan_sectors</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @loan_sectors.each do |loan_sector| %>
+  <tr>
+    <td><%= loan_sector.name %></td>
+    <td><%= link_to 'Show', loan_sector %></td>
+    <td><%= link_to 'Edit', edit_loan_sector_path(loan_sector) %></td>
+    <td><%= link_to 'Destroy', loan_sector, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Loan sector', new_loan_sector_path %>
