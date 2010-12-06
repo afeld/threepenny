@@ -2,7 +2,7 @@
 
 <table>
   <tr>
-    <th>Kiva</th>
+    <th>Kiva ID</th>
     <th>Title</th>
     <th>City</th>
     <th>Country</th>
@@ -19,10 +19,10 @@
     <td><%= loan.kiva_id %></td>
     <td><%= loan.title %></td>
     <td><%= loan.city %></td>
-    <td><%= loan.country_id %></td>
+    <td><%= loan.country %></td>
     <td><%= loan.gender %></td>
     <td><%= loan.kiva_status %></td>
-    <td><%= loan.loan_sector_id %></td>
+    <td><%= loan.loan_sector %></td>
     <td><%= link_to 'Show', loan %></td>
     <td><%= link_to 'Edit', edit_loan_path(loan) %></td>
     <td><%= link_to 'Destroy', loan, :confirm => 'Are you sure?', :method => :delete %></td>
